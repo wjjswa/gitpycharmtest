@@ -7,7 +7,7 @@ file_path ='datasets/cotton_data/demdata/1__0.tif'
 with rasterio.open(file_path) as src:
     topography_data = src.read(1)  # Read the first band
 
-plt.imshow(topography_data, cmap='terrain')
+plt.imshow(topography_data, cmap='terrain') #show images
 plt.colorbar(label='Elevation')
 plt.title('Topographical Data')
 plt.xlabel('X')
