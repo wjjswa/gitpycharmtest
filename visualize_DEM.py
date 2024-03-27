@@ -10,8 +10,8 @@ with rasterio.open(file_path) as src:
 plt.imshow(topography_data, cmap='terrain') #show images
 plt.colorbar(label='Elevation')
 plt.title('Topographical Data')
-plt.xlabel('X')
-plt.ylabel('Y')
+plt.xlabel('X')#label x axis
+plt.ylabel('Y')# label y axis
 plt.show()
 
 no_data_value = src.nodatavals[0]  # Get the no-data value for the first band
