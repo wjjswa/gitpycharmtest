@@ -2,7 +2,7 @@ import rasterio
 import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
-file_path ='datasets/cotton_data/demdata/1__0.tif'
+file_path ='datasets/cotton_data/demdata/1__0.tif'#path to the DEM file
 
 with rasterio.open(file_path) as src:
     topography_data = src.read(1)  # Read the first band
