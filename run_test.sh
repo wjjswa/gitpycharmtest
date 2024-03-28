@@ -20,4 +20,4 @@
 # load the module for python or anaconda if needed
 # module load python/3.8.5 
 # run the application
-python test.py
+python3 test.py
